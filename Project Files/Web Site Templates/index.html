@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tea Leaves Disease Detection</title>
+ <style>
+    body {
+      background-image: url({{ url_for('static', filename='gradient.jpg') }});
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    img{
+       border-radius: 50%;
+}
+  </style>
+</head>
+<body text="brown">
+  <h1 align="center">WELCOME  TO DEEP LEARNING MODEL FOR DETECTING DISEASES IN TEA LEAVES</h1>
+  <nav align="center">
+    <a href="/">Home</a> |
+    <a href="/about">About</a> |
+    <a href="/teahome">Tea Disease</a> |
+    <a href="/teapred">Prediction</a>
+  </nav>
+  <h1 align="center">HOME PAGE</h1>
+  <p align="center">Tea Leaves Disease Detection project</p>
+  <p align="center"><img src="{{ url_for('static', filename='tea leaf img.jpeg') }}"
+width="400px" height="380px"></p>
+<p align="center"><strong>TEAM ID:</strong> NM2023TMID01952</p>
+<p align="center"><strong>TEAM LEADER:</strong> HARIHARAN D</p>
+<p align="center"><strong>TEAM MEMBERS:</strong> BHARATHIARASAN A, KARTHIKEYAN A, DEENA E, VISWANATHAN D</p>
+</body>
+</html>

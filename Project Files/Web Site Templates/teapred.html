@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tea Leaves Disease Prediction</title>
+  <style>
+    body {
+      background-image: url({{ url_for('static', filename='gradient.jpg') }});
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  </style>
+</head>
+<body text="brown">
+  <h1 align="center">DEEP LEARNING MODEL FOR DETECTING DISEASES IN TEA LEAVES</h1>
+  <nav align="center">
+    <a href="/">Home</a> |
+    <a href="/about">About</a> |
+    <a href="/teahome">Tea Disease</a> |
+    <a href="/teapred">Prediction</a>
+  </nav>
+  <h1 align="center">PREDICTION</h1>
+  <form align="center" action="/teapred" method="post" enctype="multipart/form-data">
+    <label for="image">Upload an image:</label>
+    <input type="file" id="image" name="image">
+    <button type="submit">Predict</button>
+  </form>
+  <div align="center">
+    {% if prediction %}
+    <h3>Prediction Result: {{ prediction }}</h3>
+    {% endif %}
+  </div>
+</body>
+</html>
